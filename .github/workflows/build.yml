@@ -6,11 +6,11 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [windows-latest]
+        os: [macOS-latest]
         build_type: [Release]
         enable_ui: [on]
         include:
-          - os: windows-latest
+          - os: macOS-latest
             build_type: Release
             enable_ui: on
     steps:
